@@ -15,13 +15,13 @@ struct Employees: Decodable {
     enum CodingKeys: String, CodingKey {
             case employees = "data"
             case status
-        }
+    }
     
     init (from decoder :Decoder) throws {
             let container = try decoder.container(keyedBy: CodingKeys.self)
             employees = try container.decode([Employee].self, forKey: .employees)
             status = try container.decode(String.self, forKey: .status)
-        }
+    }
 }
 
 // MARK: - Data

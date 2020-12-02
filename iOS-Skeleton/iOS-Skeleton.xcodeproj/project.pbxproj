@@ -17,6 +17,9 @@
 		652A3FB2256C61F1000ECD51 /* iOS_SkeletonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652A3FB1256C61F1000ECD51 /* iOS_SkeletonUITests.swift */; };
 		652A3FC6256C6C3E000ECD51 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652A3FC5256C6C3E000ECD51 /* Employee.swift */; };
 		652A3FCE256C6E5C000ECD51 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652A3FCD256C6E5C000ECD51 /* ApiService.swift */; };
+		652A3FD92576FC11000ECD51 /* EmployeeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652A3FD82576FC11000ECD51 /* EmployeeViewModel.swift */; };
+		652A3FFF2577DB87000ECD51 /* EmployeeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652A3FFD2577DB87000ECD51 /* EmployeeTableViewCell.swift */; };
+		652A40002577DB87000ECD51 /* EmployeeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 652A3FFE2577DB87000ECD51 /* EmployeeTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,9 @@
 		652A3FB3256C61F1000ECD51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		652A3FC5256C6C3E000ECD51 /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
 		652A3FCD256C6E5C000ECD51 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		652A3FD82576FC11000ECD51 /* EmployeeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeViewModel.swift; sourceTree = "<group>"; };
+		652A3FFD2577DB87000ECD51 /* EmployeeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeTableViewCell.swift; sourceTree = "<group>"; };
+		652A3FFE2577DB87000ECD51 /* EmployeeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmployeeTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +109,9 @@
 		652A3F8E256C61F0000ECD51 /* iOS-Skeleton */ = {
 			isa = PBXGroup;
 			children = (
-				652A3FC4256C64DB000ECD51 /* Api Service */,
+				652A3FE925773379000ECD51 /* TableViewCells */,
+				652A3FDD2576FC62000ECD51 /* Controller */,
+				652A3FC4256C64DB000ECD51 /* ApiService */,
 				652A3FC3256C64C8000ECD51 /* View Model */,
 				652A3FC2256C64BC000ECD51 /* Model */,
 				652A3F8F256C61F0000ECD51 /* AppDelegate.swift */,
@@ -146,16 +154,33 @@
 		652A3FC3256C64C8000ECD51 /* View Model */ = {
 			isa = PBXGroup;
 			children = (
+				652A3FD82576FC11000ECD51 /* EmployeeViewModel.swift */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
 		};
-		652A3FC4256C64DB000ECD51 /* Api Service */ = {
+		652A3FC4256C64DB000ECD51 /* ApiService */ = {
 			isa = PBXGroup;
 			children = (
 				652A3FCD256C6E5C000ECD51 /* ApiService.swift */,
 			);
-			path = "Api Service";
+			path = ApiService;
+			sourceTree = "<group>";
+		};
+		652A3FDD2576FC62000ECD51 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		652A3FE925773379000ECD51 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				652A3FFD2577DB87000ECD51 /* EmployeeTableViewCell.swift */,
+				652A3FFE2577DB87000ECD51 /* EmployeeTableViewCell.xib */,
+			);
+			path = TableViewCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				652A3F9C256C61F1000ECD51 /* LaunchScreen.storyboard in Resources */,
+				652A40002577DB87000ECD51 /* EmployeeTableViewCell.xib in Resources */,
 				652A3F99256C61F1000ECD51 /* Assets.xcassets in Resources */,
 				652A3F97256C61F0000ECD51 /* Main.storyboard in Resources */,
 			);
@@ -289,9 +315,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				652A3F94256C61F0000ECD51 /* ViewController.swift in Sources */,
+				652A3FFF2577DB87000ECD51 /* EmployeeTableViewCell.swift in Sources */,
 				652A3FCE256C6E5C000ECD51 /* ApiService.swift in Sources */,
 				652A3FC6256C6C3E000ECD51 /* Employee.swift in Sources */,
 				652A3F90256C61F0000ECD51 /* AppDelegate.swift in Sources */,
+				652A3FD92576FC11000ECD51 /* EmployeeViewModel.swift in Sources */,
 				652A3F92256C61F0000ECD51 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
